@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Plus+Jakarta+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.h1-desafio {
+    color: white;
+    padding: 50px;
+    font-size: 100px;
+    display: flex;
+    margin-top: 300px;
+    margin-left: 80px;
+    margin-right: 80px;
+    justify-content: center;
+    border-color: rgb(237, 237, 237);
+    border-width: 10px;
+    border-style: double;
+    flex-wrap: wrap;
+    text-shadow: 5px 5px 0px #ff0000;
+}
