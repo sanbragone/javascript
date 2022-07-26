@@ -8,7 +8,7 @@ let input = prompt(
     "\n" +
     "1- Ventas" +
     "\n" +
-    "2- Publicidad" +
+    "2- Tamaño fotografías" +
     "\n" +
     "3- Soporte Tecnico" +
     "\n" +
@@ -35,15 +35,15 @@ while (input != "Cancelar") {
       // Dentro del primer 'case' del switch principal, agregamos otro switch para el submenu
       switch (ventas1) {
         case "1":
-          alert("Premio de Bronce");
+          alert("¡Ganaste una placa de Bronce!");
           break;
 
         case "2":
-          alert("Premio de Plata");
+          alert("¡Ganaste una placa de Plata!");
           break;
 
         case "3":
-          alert("Premio de Oro");
+          alert("¡Ganaste una placa de Oro!");
           break;
 
         default:
@@ -52,7 +52,27 @@ while (input != "Cancelar") {
       break;
 
     case "2":
-      alert("Publicidad");
+      // Se genera variable 'tamanio' y se utilizar para el 'if'
+      let tamanio = prompt(
+        "Visualice los tamaños disponibles para la impresion:" +
+          "\n" +
+          "\n" +
+          "Tamaño chico: ingrese ´Chico´" +
+          "\n" +
+          "Tamaño mediano: ingrese ´Mediano´" +
+          "\n" +
+          "Tamaño grande: ingrese ´Grande´" +
+          "\n"
+      );
+      if (tamanio == "Chico") {
+        alert("Tamaño chico disponible en cuadros de 30cm x 40cm");
+      } else if (tamanio == "Mediano") {
+        alert("Tamaño mediano disponible en cuadros de 50cm x 70cm");
+      } else if (tamanio == "Grande") {
+        alert("Tamaño grande disponible en cuadros de 100cm x 60cm");
+      } else {
+        alert("Tamaño no encontrado");
+      }
       break;
 
     case "3":
@@ -72,7 +92,7 @@ while (input != "Cancelar") {
       "\n" +
       "1- Ventas" +
       "\n" +
-      "2- Publicidad" +
+      "2- Tamaño fotografías" +
       "\n" +
       "3- Soporte Tecnico" +
       "\n" +
