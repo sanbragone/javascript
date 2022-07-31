@@ -19,7 +19,9 @@ body {
 
 .divPadreDesafioNew {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .h1-desafio {
@@ -38,5 +40,11 @@ body {
 .divDesafioNew {
     color: white;
     font-size: xx-large;
+    font-weight: bold;
+}
+
+.divDesafioNewID {
+    color: red;
+    font-size: 100px;
     font-weight: bold;
 }
